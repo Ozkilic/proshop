@@ -1,5 +1,4 @@
-import mongoose, { mongo } from 'mongoose'
-import Product from './productModel'
+import mongoose from 'mongoose'
 
 const orderSchema = mongoose.Schema(
   {
@@ -56,7 +55,7 @@ const orderSchema = mongoose.Schema(
     isPaid: {
       type: Boolean,
       required: true,
-      default: fasle,
+      default: false,
     },
     paidAt: {
       type: Date,
