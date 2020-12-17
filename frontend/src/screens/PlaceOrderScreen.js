@@ -38,8 +38,9 @@ const PlaceOrderScreen = () => {
               <h2>Shipping</h2>
               <p>
                 <strong>Adress:</strong>
-                {cart.shippingAdress.address}, {cart.shippingAdress.city},
-                {cart.shippingAdress.postalCode}, {cart.shippingAdress.country}
+                {cart.shippingAddress.address}, {cart.shippingAddress.city},
+                {cart.shippingAddress.postalCode},{' '}
+                {cart.shippingAddress.country}
               </p>
             </ListGroup.Item>
 
